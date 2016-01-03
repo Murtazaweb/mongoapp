@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>List Of All Projects</title>
+</head>
+<body>
+<h1>LIST VIEW</h1>
+
+<div class="row">
+
+    <input type="text" ng-model="search"/>
+
+        <li ng-repeat="poll in polls | filter:search">
+            <a>{{poll.project}}</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+<a href="#/new">Create</a>
+</body>
+</html>
